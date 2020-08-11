@@ -7,7 +7,6 @@ const Row = ({ title, fetchUrl }) => {
   useEffect(() => {
     const fetchData = async () => {
       const request = await axios.get(fetchUrl)
-      //console.table(request.data.results)
       console.log(request.data.results)
       setMovies(request.data.results)
     }
